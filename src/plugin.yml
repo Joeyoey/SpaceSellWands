@@ -1,0 +1,13 @@
+name: SpaceSellWands
+version: 0.12.3
+description: Wands that sell Items in chests
+author: Joeyoey
+main: com.joeyoey.sellwands.SellWands
+api-version: 1.14
+softdepend: [ShopGUIPlus]
+
+commands:
+  sellwands:
+    aliases: [sellw, sellwand]
+    description: Give sell wands to other players that are online.
+    usage: /sellwands

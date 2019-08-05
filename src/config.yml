@@ -1,0 +1,40 @@
+essentials-price: false
+shopguiplus: false
+breakdown: true
+bbcheck: false
+prices:
+  stone: 1.0
+item:
+  default:
+    name: '&3Sell-Wand'
+    type: 'DIAMOND_HOE'
+    lore:
+     - '&7Right-click a chest with'
+     - '&7this wand to sell it''s'
+     - '&7contents.'
+    enchanted: true
+    uses: -1
+    price-multiplier: 1.0
+    cooldown: 1
+  default2:
+    name: '&3Sell-Wand2'
+    type: 'DIAMOND_HOE'
+    lore:
+     - '&7Right-click a chest with'
+     - '&7this wand to sell it''s'
+     - '&7contents.'
+    enchanted: true
+    uses: 10
+    price-multiplier: 12.0
+    cooldown: 10    
+messages:
+  cooldown: '&cYou must wait %seconds% seconds to sell again.'
+  sale: '&3&lItems sold for &b&l$%amount%&3&l:'
+  breakdown: '&8 » &b%item% (x%amount%) for $%price%.'
+  give: '&bGiven %player% a sell wand.'
+  receive: '&bReceived a sell wand.'
+  uses: '&bYour sell wand now has &3%uses% &buses left.'
+  uses-lore: '&bUses: &3%uses%'
+  chest-empty: '&cNothing inside the chest is sellable.'
+  item-break: '&cYour sell wand has no more uses left.'
+  no-permission: '&cYou do not have permission to use sell wands.'
