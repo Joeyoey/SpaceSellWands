@@ -50,11 +50,6 @@ public class SellWands extends JavaPlugin {
 		Bukkit.getPluginManager().registerEvents(new BlockInteractEvent(this), this);
 		getServer().getPluginCommand("sellwands").setExecutor(new SellWandsCommand(this));
 		getCommand("sellwands").setTabCompleter(new SellWandsCommand(this));
-		//getConfig().getConfigurationSection("item").getKeys(false).forEach(s -> {
-		//	sellwandNames.put(s, getConfig().getString("item." + s + ".name"));
-		//	sellwandKeys.put(getConfig().getString("item." + s + ".name"), s);
-		//	getServer().getConsoleSender().sendMessage("[SuperSellWands] " + s + " has been loaded.");
-		//});
 		loadWands();
 	}
 
@@ -167,7 +162,6 @@ public class SellWands extends JavaPlugin {
 
 					itemReformat = itemReformat.replace("_", "").toLowerCase();
 
-					System.out.println("[SpaceSellWands] Item " + itemReformat + " registered for $" + price);
 					this.prices.put(itemReformat + ":" + itemdata, price);
 				}
 			} else {
@@ -191,9 +185,6 @@ public class SellWands extends JavaPlugin {
 
 				}
 				itemReformat = itemReformat.replace("_", "").toLowerCase();
-
-				// System.out.println("[SuperSellWands] Item " + itemReformat + " registered for
-				// $" + price);
 				this.prices.put(itemReformat, price);
 			}
 		}
